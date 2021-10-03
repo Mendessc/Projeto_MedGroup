@@ -21,6 +21,7 @@ namespace senai_MedicalGroupSP_webAPI.Contexts
         public virtual DbSet<Clinica> Clinicas { get; set; }
         public virtual DbSet<Consulta> Consulta { get; set; }
         public virtual DbSet<Especialidade> Especialidades { get; set; }
+        public virtual DbSet<ImagemUser> ImagemUsuarios { get; set; }
         public virtual DbSet<Medico> Medicos { get; set; }
         public virtual DbSet<Paciente> Pacientes { get; set; }
         public virtual DbSet<Situacao> Situacaos { get; set; }
@@ -159,6 +160,41 @@ namespace senai_MedicalGroupSP_webAPI.Contexts
                     .HasMaxLength(70)
                     .IsUnicode(false)
                     .HasColumnName("nomeEspecialidade");
+            });
+
+            modelBuilder.Entity<ImagemUser>(entity =>
+            {
+                entity.ToTable("imagemUsuario");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Binario)
+                    .IsRequired()
+                    .HasColumnName("binario");
+
+                entity.Property(e => e.DataInclusao)
+                    .HasColumnType("datetime")
+                    .HasColumnName("data_inclusao")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
+                entity.Property(e => e.MimeType)
+                    .IsRequired()
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("mimeType");
+
+                entity.Property(e => e.NomeArquivo)
+                    .IsRequired()
+                    .HasMaxLength(250)
+                    .IsUnicode(false)
+                    .HasColumnName("nomeArquivo");
+
+                entity.HasOne(d => d.IdUsuarioNavigation)
+                    .WithMany(p => p.ImagemUsuarios)
+                    .HasForeignKey(d => d.IdUsuario)
+                    .HasConstraintName("FK__imagemUsu__idUsu__02FC7413");
             });
 
             modelBuilder.Entity<Medico>(entity =>
