@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_login{
+    background-image: url(../img/unnamed.jpg);
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* CSS LOGIN -----------------------------------------------------*/
+.container_login{
+    background: linear-gradient(0deg, rgba(5, 99, 103, 0.4), rgba(5, 99, 103, 0.4));
+    width: 100%;
+    height: 100%;
+}
+
+.organizar_campo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.bloco-login{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    background: linear-gradient(90deg, rgba(0, 51, 115, 0.2) 0%, rgba(255, 255, 255, 0.2) 5.73%, rgba(255, 255, 255, 0.2) 48.44%, rgba(255, 255, 255, 0.2) 94.27%, rgba(0, 51, 115, 0.2) 100%), linear-gradient(180deg, rgba(0, 51, 115, 0.2) 0%, rgba(255, 255, 255, 0.2) 3.12%, rgba(255, 255, 255, 0.2) 48.96%, rgba(255, 255, 255, 0.2) 93.75%, rgba(0, 51, 115, 0.2) 100%), #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.69);
+box-sizing: border-box;
+box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px 10px 10px 10px;
+    width: 46vw;
+}
+
+.header_login{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), #003373;
+border: 1px solid rgba(0, 0, 0, 0.69);
+box-sizing: border-box;
+box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+.header_login h1{
+    text-transform: uppercase;
+    margin-left: 5px;
+    width: 214px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    margin-right: 25px;
+}
+.header_login span{
+    text-transform: uppercase;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 80px;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+}
+
+.header_login hr{
+    height: 75px;
+    margin-top:revert;
+}
+.header_login img{
+    width: 13vw;
+    margin-top: 4px;
+}
+
+.inicio-login{
+    width: 165vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.inicio-login h2{
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    color: #056367;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hr_login{
+    display: flex;
+    justify-content: space-between;
+    width: 543px;
+    margin-top: 10px;
+}
+
+.hr_login hr{
+    width: 16vw;
+}
+
+.form-login{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    font-family: 'Cabin', sans-serif;
+    color: #056367;
+}
+.input-login{
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.botao-login{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-login{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), #00587D;
+border-radius: 7px;
+height: 55px;
+width:20vw;
+margin-top: 75px;
+font-size: 28px;
+color: #FFFFFF;
+font-family: 'Cabin', sans-serif;
+cursor: pointer;
+transition: all 0.5s ease-in-out 0.1s;
+}
+.btn-login:hover{
+    background:linear-gradient(to bottom, #07568f 5%, #2e8ed8 100%);
+    
+}
+
+/* CSS HOME ADM -------------------------------------------- */
+.container_header{
+    width: 100%;
+    height: 7vh;
+}
+
+.div_header{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), #003373;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 100px;
+    padding-inline-end: 100px;
+}
+
+.logo_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.logo_header img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+
+.link_header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family:'Cabin', sans-serif;
+    font-size: 18px;
+    margin-right: 70px;
+
+}
+/* .link_header{ 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    text-decoration: none;
+    font-size: 21px;
+
+}*/
+
+.main_home{
+    height: 94vh;
+    
+    background-repeat: no-repeat;
+}
+
+.banner_home{
+    background-image: url(../img/Rectangle\ 5.png);
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.org_banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner_home h1{
+    text-align: center;
+    font-size: 53px;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    color: #FFFFFF;
+}
+.banner_home hr{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.banner_home p{
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.banner_botoes{
+    background-image: url(../img/Rectangle\ 6.png);
+    height: 535px;
+    display: flex;
+    align-items: center;
+}
+
+.circulo1{
+    width: 20%;
+    
+}
+.circulo2{
+    width: 20%;
+}
+
+.org_botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 59vw;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.btn_list{
+    background: linear-gradient(0deg, rgba(0, 88, 125, 0.6), rgba(0, 88, 125, 0.6)), url(../img/Rectangle\ 7.png);
+border: 1px solid rgba(0, 0, 0, 0.6);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+width: 30vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+    cursor: pointer;
+    
+}
+
+.btn_cad{
+    background: linear-gradient(0deg, rgba(0, 88, 125, 0.6), rgba(0, 88, 125, 0.6)), url(../img/Rectangle\ 8.png);
+border: 1px solid rgba(0, 0, 0, 0.6);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 13px;
+width: 30vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+    cursor: pointer;
+    margin-left: 190px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 0.01%, rgba(0, 0, 0, 0.2) 100%), #003373;
+}
+
+.org_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links_footer{
+    display: flex;
+    flex-direction: column;
+}
+.links_footer a{
+    color: #FFFFFF;
+    font-family:  'Cabin', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+}
+.logo_footer span{
+    color: #FFFFFF;
+    font-family:  'Cabin', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase ;
+    
+}
+.info_footer{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+.info_footer span{
+    color: #FFFFFF;
+    font-family:  'Cabin', sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* HOME PACIENTE/MEDICO */
+.descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 75px;
+}
+.descricao p{
+    color: #056367;
+    font-family:  'Cabin', sans-serif;
+    font-size: 22px;
+    }
+    .descricao img{
+        width: 30vw;
+    }
+
+    /* TELA DE LISTAGEM */
+    .banner_list{
+        background-image: url(../img/Rectangle\ 19.png);
+        height: 48vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .org_banner_list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .org_banner_list h1{
+        font-family:  'Cabin', sans-serif;
+    font-size: 45px;
+    color: #FFFFFF;
+    }
+    .org_banner_list hr{
+        width: 36%;
+    }
+
+    .lista{
+        background: linear-gradient(180deg, rgba(5, 99, 103, 0.2) 5.21%, rgba(255, 255, 255, 0.2) 30.21%, rgba(255, 255, 255, 0.2) 48.96%, rgba(255, 255, 255, 0.2) 66.15%, rgba(5, 99, 103, 0.2) 92.19%), #FFFFFF;
+    }
+
+    .org_lista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabela_medico{
+        width: 1200px;
+        margin-bottom: 200px;
+        margin-top: 40px;
+    }
+    .tabela_medico thead{
+        height: 60px;
+        background-color: #056367;
+    }
+    .tabela_medico tbody{
+    
+        background: rgba(255, 255, 255, 0.74);
+    }
+    .tabela_medico th{
+        font-family:  'Cabin', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        width: 400px;
+    
+        
+    }
+    .tabela_medico td{
+        background-color: rgba(228, 220, 220, 0.74);
+        font-family:  'Cabin', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        
+    }
+    
+    .bnt_editar_medico button{
+        background-color: #056367;
+        color: white;
+        font-family:  'Cabin', sans-serif;
+        display: flex;
+        justify-content: center;
+        width: 7vw;
+    }
+    /* TELA DE CADASTRO */
+
+    .banner_cad{
+        background-image: url(../img/Rectangle\ 20.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 48vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .org_banner_cad{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .org_banner_cad h1{
+        font-family:  'Cabin', sans-serif;
+    font-size: 45px;
+    color: #FFFFFF;
+    }
+    .org_banner_cad hr{
+        width: 36%;
+    }
+
+    .cadastro{
+        background: linear-gradient(180deg, rgba(5, 99, 103, 0.2) 5.21%, rgba(255, 255, 255, 0.2) 30.21%, rgba(255, 255, 255, 0.2) 48.96%, rgba(255, 255, 255, 0.2) 66.15%, rgba(5, 99, 103, 0.2) 92.19%), #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+    }
+    .container_cad{
+        display: flex;
+        justify-content: center;
+    }
+
+    .org_cadastro{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 42vw;
+        background-color:#056367 ;
+        height: 70vh;
+        align-items: center;
+        border-radius: 4px;
+    }
+    .org_cadastro h2{
+        font-family:  'Cabin', sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    
+    }
+    .org_cadastro hr{
+        width: 24vw;
+    }
+
+    .org_cadastro form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .org_cadastro input{
+        margin-bottom: 25px;
+        width: 33vw;
+        border-radius: 5px;
+    }
+    .org_cadastro select{
+        margin-bottom: 25px;
+        width: 33vw;
+        border-radius: 5px;
+    }
+
+    .org_cadastro button{
+        background-color: #FFFFFF;
+        color: black;
+        font-family:  'Cabin', sans-serif;
+        font-size: 18px;
+        height: 6vh;
+        width: 8vw;
+        border-radius: 5px;
+    }
+    .org_img_cad{
+        margin-right: 100px;
+    }

@@ -26,7 +26,7 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
             _medicoRepository = new MedicoRepository();
         }
 
-        [Authorize(Roles = "2")]
+        
         [HttpPost]
         public IActionResult Cadastrar(Consulta novaConsulta)
         {
@@ -66,46 +66,40 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
             });
         }
 
-        [Authorize(Roles = "1,3")]
+        
         [HttpGet("Listar/Minhas")]
         public IActionResult ListarMinhas()
         {
-            int id = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
 
-            int idTipo = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == ClaimTypes.Role).Value);
-
-            List<Consulta> listaConsultas = _consultaRepository.ListarMinhas(id, idTipo);
-
-            if (listaConsultas.Count == 0)
-            {
-                return NotFound(new
+                try
                 {
-                    Mensagem = "Nenhuma consulta encontrada"
-                });
-            }
+                    short id = Convert.ToInt16(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+                    short idTipo = Convert.ToInt16(HttpContext.User.Claims.First(c => c.Type == ClaimTypes.Role).Value);
+                    List<Consulta> listaConsulta = _consultaRepository.ListarMinhas(id, idTipo);
 
-            if (idTipo == 1)
-            {
-                return Ok(new
+                    if (listaConsulta.Count == 0)
+                    {
+                        return BadRequest(new
+                        {
+                            Mensagem = "Não há nenhuma consulta do medico informado"
+                        });
+                    }
+
+
+                    return Ok(listaConsulta);
+                }
+                catch (Exception erro)
                 {
-                    Mensagem = $"O paciente buscado tem {_consultaRepository.ListarMinhas(id, idTipo).Count} consultas",
-                    listaConsultas
-                });
-            }
 
-            if (idTipo == 3)
-            {
-                return Ok(new
-                {
-                    Mensagem = $"O médico buscado tem {_consultaRepository.ListarMinhas(id, idTipo).Count} consultas",
-                    listaConsultas
-                });
-            }
-
-            return null;
+                    return BadRequest(new
+                    {
+                        mensagem = "Nao foi possivel ver suas consultas",
+                        erro
+                    });
+                }
         }
 
-        [Authorize(Roles = "3")]
+        [Authorize(Roles = "2")]
         [HttpPatch("Descricao/{id}")]
         public IActionResult AlterarDescricao(Consulta consultaAtualizada, int id)
         {
@@ -146,7 +140,7 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
             });
         }
 
-        [Authorize(Roles = "2")]
+        
         [HttpGet]
         public IActionResult ListarTodos()
         {
@@ -162,4 +156,4 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
         }
     }
 }
-}
+

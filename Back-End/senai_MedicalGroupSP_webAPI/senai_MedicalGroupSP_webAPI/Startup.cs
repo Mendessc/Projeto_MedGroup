@@ -27,6 +27,17 @@ namespace senai_MedicalGroupSP_webAPI
                  options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
              });
 
+              services.AddCors(options =>
+        {
+            options.AddPolicy(name: "CorsPolicy",
+                              builder =>
+                              {
+                                  builder.WithOrigins("http://localhost:3000")
+                                  .AllowAnyHeader()
+                                  .AllowAnyMethod();
+                              });
+        });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -65,6 +76,8 @@ namespace senai_MedicalGroupSP_webAPI
             }
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseSwagger();
 

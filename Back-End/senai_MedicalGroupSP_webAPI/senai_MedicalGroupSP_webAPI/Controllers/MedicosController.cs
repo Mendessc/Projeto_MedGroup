@@ -43,7 +43,6 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
             });
         }
 
-        [Authorize(Roles = "2")]
         [HttpGet]
         public IActionResult Listar()
         {
@@ -59,4 +58,4 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
         }
     }
 }
-}
+

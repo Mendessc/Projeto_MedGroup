@@ -52,4 +52,3 @@ namespace senai_MedicalGroupSP_webAPI.Controllers
         }
     }
 }
-}
