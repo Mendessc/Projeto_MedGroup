@@ -71,6 +71,10 @@ namespace senai_MedicalGroupSP_webAPI.Repositories
                             IdSituacao = c.IdSituacao,
                             IdMedico = c.IdMedico,
                             Descricao = c.Descricao,
+                            IdMedicoNavigation = new Medico()
+                            {
+                                NomeMedico = c.IdMedicoNavigation.NomeMedico
+                            },
                             IdPacienteNavigation = new Paciente()
                             {
                                 NomePaciente = c.IdPacienteNavigation.NomePaciente,
@@ -85,6 +89,7 @@ namespace senai_MedicalGroupSP_webAPI.Repositories
                             {
                                 Descricao = c.IdSituacaoNavigation.Descricao
                             }
+
 
                         })
                         .Where(c => c.IdMedico == idMedico).ToList();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj": {}
+    "C:\\Users\\lucas\\OneDrive\\Documentos\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Documentos\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Documentos\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj",
         "projectName": "senai_MedicalGroupSP_webAPI",
-        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\Projeto_MedGroup\\Back-End\\senai_MedicalGroupSP_webAPI\\senai_MedicalGroupSP_webAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
