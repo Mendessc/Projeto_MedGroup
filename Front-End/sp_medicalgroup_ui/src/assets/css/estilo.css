@@ -266,6 +266,15 @@ transition: all 0.5s ease-in-out 0.1s;
     
 }
 
+.org_botoes1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 43vw;
+    position: relative;
+    z-index: 1;
+}
+
 .btn_list{
     background: linear-gradient(0deg, rgba(0, 88, 125, 0.6), rgba(0, 88, 125, 0.6)), url(../img/Rectangle\ 7.png);
 border: 1px solid rgba(0, 0, 0, 0.6);
@@ -365,6 +374,7 @@ footer{
     color: #056367;
     font-family:  'Cabin', sans-serif;
     font-size: 22px;
+    margin-right: 83px
     }
     .descricao img{
         width: 30vw;

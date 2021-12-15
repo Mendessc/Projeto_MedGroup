@@ -41,7 +41,7 @@ class HomePaciente extends Component {
                     </section>
                     <section class="banner_botoes">
                         <img class="circulo_1" src={circulo1} alt="" />
-                        <div class="org_botoes">
+                        <div class="org_botoes1">
                             <div class="botao_list">
                                 <button onClick={this.redirecionarLista} class="btn_list" id="btn_list">Listagem de Consultas</button>
                             </div>
