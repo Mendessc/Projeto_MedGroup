@@ -18,7 +18,7 @@ class ListaConsultas extends Component{
     };
 
     buscarConsulta = ()=> {
-        fetch('http://localhost:5000/api/Consultas')
+        fetch('https://6205582b161670001741b955.mockapi.io/consultas')
 
         .then(resposta => resposta.json())
 
@@ -72,14 +72,14 @@ class ListaConsultas extends Component{
                                 this.state.listaConsultas.map((Consultas) => {
                                     return(
                                         <tr key={Consultas.idConsulta}>
-                                            <td>{Consultas.idPacienteNavigation.nomePaciente}</td>
-                                            <td>{Consultas.idMedicoNavigation.nomeMedico}</td>
+                                            <td>{Consultas.idPacienteNavigation[0].nomePaciente}</td>
+                                            <td>{Consultas.idMedicoNavigation[0].nomeMedico}</td>
                                             <td>{Intl.DateTimeFormat("pt-BR",{
                                             year: 'numeric',month: 'numeric', day:'numeric',
                                             hour:'numeric', minute:'numeric'
                                             }).format(new Date (Consultas.dataConsulta))}</td>
-                                            <td>{Consultas.idSituacaoNavigation.descricao}</td>
                                             <td>{Consultas.descricao}</td>
+                                            <td>{Consultas.situacao}</td>
                                         </tr>
                                     )
                                 })

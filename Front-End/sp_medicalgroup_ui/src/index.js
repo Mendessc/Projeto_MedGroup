@@ -63,7 +63,7 @@ const routing = (
         <PermissaoMedico path = "/listaconsultasmedico" component = {MinhasConsultasM}/>
         <PermissaoPaciente path = "/listaconsultaspaciente" component = {MinhasConsultasP}/>
         <PermissaoAdm path = "/cadastroConsultas" component = {CadastroConsultas} />
-        <Route path = "/" component = {Login}/>
+        <Route path = "/" component = {ListaConsultas}/>
         <Route path = "/notfound" component = {NotFound} />
         <Redirect to = "/notfound"/>
         <Route />
